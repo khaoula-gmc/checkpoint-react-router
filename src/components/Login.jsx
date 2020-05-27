@@ -9,7 +9,6 @@ export class Login extends React.Component {
     this.state = {
       redirectToReferrer: false
     }
-    // binding 'this'
     this.login = this.login.bind(this);
   }
 
@@ -35,10 +34,6 @@ export class Login extends React.Component {
       <div className='overlay'>
         <div className='wrapper'>
         <p className='login-msg'>You must log in to view the page at Admin Area</p>
-        <div className='auth'>
-        <input type='text' placeholder='Login'/>
-        <input type='password' placeholder='password'/>
-        </div>
         <button onClick={this.login}>Log in</button>
       </div>
       </div>
